@@ -1,0 +1,5 @@
+n = length of bible
+m = length of jesus(pattern)
+best && avg O(m + n) time
+worst O(m * n) time
+O(1) space

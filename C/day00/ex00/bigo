@@ -1,0 +1,2 @@
+O(n) time, n is the number of elements in arts
+O(1) space.

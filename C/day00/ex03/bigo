@@ -1,0 +1,12 @@
+n = number of artworks
+k = capacity of dict
+k can be discussed, since it's given as input,
+we might not consider, if consider: O(n + k) space
+
+For search
+O(n) time worst
+O(n) space
+
+for insert
+O(n) time
+O(n) space
