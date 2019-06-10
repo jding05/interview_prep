@@ -1,0 +1,9 @@
+n = length of the array
+
+sort:
+O(nk) time -> O(n) - k is digit number, but can be constant -> drop
+O(n) space
+
+find:
+O(log(n)) time
+O(1) space
