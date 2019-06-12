@@ -1,0 +1,6 @@
+n = size of tree
+h = height of tree
+O(n) time
+O(height) space (hight is minimum log(n) hence recursive-ness is overtaken by height)
+
+recursive depth first search

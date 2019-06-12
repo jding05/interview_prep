@@ -1,0 +1,4 @@
+n = size of array
+O(n) time
+O(log(n)) space
+recursive
