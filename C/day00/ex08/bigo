@@ -1,0 +1,5 @@
+n = number of words in dict
+m = max length of words,
+z = target len
+O(m * z * n) time
+O(m * z) space
