@@ -46,12 +46,12 @@ struct s_node *swap(struct s_node **root, struct s_node **parent, struct s_node 
 	return cur; // going down
 }
 
-void maxHeapSwitch(struct s_node **root, struct s_node *parent, struct s_node *cur)
+void heapify(struct s_node **root, struct s_node *parent, struct s_node *cur)
 {
 	if (cur->left)
-		maxHeapSwitch(root, cur, cur->left);
+		heapify(root, cur, cur->left);
 	if (cur->right)
-		maxHeapSwitch(root, cur, cur->right);
+		heapify(root, cur, cur->right);
 	struct s_node *tmp = cur;
 	while (tmp && (tmp->right || tmp->left)
 		&& ((tmp->right && tmp->value < tmp->right->value)
@@ -70,5 +70,5 @@ void	saveTheSequoia(struct s_node **root)
 {
 	if (!root || !(*root) || (!(*root)->left && !(*root)->right))
 		return ;
-	maxHeapSwitch(root, NULL, *root);
+	heapify(root, NULL, *root);
 }
