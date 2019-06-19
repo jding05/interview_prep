@@ -1,0 +1,5 @@
+n = sizeof pizza
+
+O(n!) time
+O(n) space
+
