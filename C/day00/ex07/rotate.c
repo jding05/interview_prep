@@ -2,15 +2,16 @@
 
 void rotate(int **picture, int n)
 {
+	int index_len = n -1;
 	for (int row = 0; row < n/2; row++)
 	{
-		for (int col = 0; col < n/2; col++)
+		for (int col = row; col < index_len - row; col++)
 		{
 			int tmp = picture[row][col];
-			picture[row][col] = picture[n - row -1][col];
-			picture[n - row -1][col] = picture[n - row -1][n - col -1];
-			picture[n - row -1][n - col -1] = picture[row][n - col -1];
-			picture[row][n - col -1] = tmp;
+			picture[row][col] = picture[index_len - col][row];
+			picture[index_len - col][row] = picture[index_len - row][index_len - col];
+			picture[index_len - row][index_len - col] = picture[col][index_len - row];
+			picture[col][index_len - row] = tmp;
 		}
 	}
 }
